@@ -17,8 +17,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: "15"
+    - name: Use yarn 2
+      run: yarn set version berry
     - name: Validate
-      run: npx js-org-validate -q
+      run: yarn dlx js-org-validate
     - name: Annotate
       uses: yuzutech/annotations-action@v0.1.0
       if: always()
