@@ -501,6 +501,7 @@ var cnames_active = {
   "consono": "r37r0m0d3l.github.io/consono",
   "construyendotrabajo": "mteyss.github.io/construyendotrabajo", // noCF? (don´t add this in a new PR)
   "consultant": "jense5.github.io/consultant",
+  "contently": "krmax44.github.io/contently",
   "contextify": "abemedia.github.io/jquery-contextify", // noCF? (don´t add this in a new PR)
   "cookiebox": "metaa.gitlab.io/cookiebox.js",
   "cookiecord": "cookiecord.github.io/cookiecord",
@@ -670,6 +671,7 @@ var cnames_active = {
   "dogstack": "dogstack.gitbooks.io/handbook", // noCF
   "dollar": "defims.github.io/dollar",
   "dolphin": "uyouthe.github.io/dolphin",
+  "domainr": "cname.vercel-dns.com", // noCF
   "dominion": "dominion-framework.github.io",
   "domtastic": "webpro.github.io/DOMtastic",
   "domutils": "fb55.github.io/domutils",
@@ -1098,13 +1100,13 @@ var cnames_active = {
   "imrc-datetime-picker": "smrsan76.github.io/imrc-datetime-picker",
   "incite": "movny.github.io/it",
   "inert": "codemaster138.github.io/inert",
-  "inkstats": "lucaslah.github.io/InkStats-v2",
   "infinite-tree": "cheton.github.io/infinite-tree",
   "infinity": "dragoonzx.github.io/infinity",
   "inig": "inig.github.io",
   "initial-wu": "initial-wu.github.io",
   "injectify": "injectify.github.io/docs",
   "inko": "inko.netlify.com",
+  "inkstats": "lucaslah.github.io/InkStats-v2",
   "inline-style-prefixer": "rofrischmann.github.io/inline-style-prefixer",
   "innova": "innova-fll.github.io",
   "inscriptum": "sumbad.github.io/inscriptum",
@@ -2034,9 +2036,9 @@ var cnames_active = {
   "redux-undo": "hosting.gitbook.com",
   "redux-webpack-boilerplate": "cchamberlain.github.io/redux-webpack-boilerplate", // noCF? (don´t add this in a new PR)
   "reduxible": "pitzcarraldo.github.io/reduxible", // noCF? (don´t add this in a new PR)
+  "reforms": "empla.github.io/reforms-docs",
   "refract": "hosting.gitbook.com",
   "refraction": "mbasso.github.io/refraction", // noCF? (don´t add this in a new PR)
-  "reforms": "empla.github.io/reforms-docs",
   "refujs": "refujs.github.io", // noCF? (don´t add this in a new PR)
   "refun": "gears233.github.io/refun",
   "regexly": "neeksandhu.github.io/regexly",
