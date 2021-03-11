@@ -24,5 +24,4 @@ jobs:
       if: always()
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        title: 'validate'
         input: './annotations.json'
