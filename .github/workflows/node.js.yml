@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: "15"
     - name: Validate
-      run: npx js-org-validate
+      run: npx js-org-validate -q
     - name: Annotate
       uses: yuzutech/annotations-action@v0.1.0
       if: always()
