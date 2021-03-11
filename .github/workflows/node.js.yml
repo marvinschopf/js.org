@@ -21,6 +21,7 @@ jobs:
       run: npx js-org-validate
     - name: Annotate
       uses: yuzutech/annotations-action@v0.1.0
+      if: always()
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         title: 'validate'
