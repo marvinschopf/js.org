@@ -20,7 +20,7 @@ jobs:
     - name: Use yarn 2
       run: yarn set version berry
     - name: Validate
-      run: yarn dlx js-org-validate
+      run: yarn dlx --quiet js-org-validate
     - name: Annotate
       uses: yuzutech/annotations-action@v0.1.0
       if: always()
