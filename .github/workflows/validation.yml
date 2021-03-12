@@ -3,8 +3,7 @@ name: Validation
 on:
     push:
         branches: [master]
-    pull_request:
-        branches: [master]
+    pull_request_target:
 
 jobs:
     validate:
@@ -26,15 +25,19 @@ jobs:
               with:
                   repo-token: "${{ secrets.GITHUB_TOKEN }}"
                   input: "./annotations.json"
-            - id: get_pr_comment
-              name: Get PR comment
+            - name: "Comment PR"
+              uses: actions/github-script@v3
               if: always() && github.event_name == 'pull_request'
-              run: echo "::set-output name=comment::$(awk -v ORS='\\n' '1' ./comment.md)"
-            - name: Comment PR
-              uses: unsplash/comment-on-pr@master
-              if: always() && github.event_name == 'pull_request'
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  msg: ${{steps.get_pr_comment.outputs.comment}}
-                  check_for_duplicate_msg: false
+                  github-token: ${{ secrets.GITHUB_TOKEN }}
+                  script: |
+                      const fs = require("fs");
+                      const { issue: { number: issue_number }, repo: { owner, repo }  } = context;
+                      github.issues.createComment(
+                        { 
+                          issue_number,
+                          owner,
+                          repo,
+                          body: await fs.promises.readFile(`${process.env.GITHUB_WORKSPACE}/comment.md`, "utf-8") 
+                        }
+                      );
