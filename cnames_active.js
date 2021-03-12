@@ -112,7 +112,7 @@ var cnames_active = {
   "airtable-plus": "victorhahn.github.io/airtable-plus",
   "ais": "yunyoujun.github.io/ais.js",
   "ajaxable": "artf.github.io/ajaxable",
-  "ajinkya": "steelx.github.io/ajinkyaxjs",
+s  "ajinkya": "steelx.github.io/ajinkyaxjs",
   "ajv": "epoberezkin.github.io/ajv",
   "akala": "npenin.github.io/akala",
   "akase": "cedmax.github.io/akase", // noCF? (don´t add this in a new PR)
