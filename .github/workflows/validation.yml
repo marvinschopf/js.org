@@ -29,7 +29,7 @@ jobs:
             - id: get_pr_comment
               name: Get PR comment
               if: always() && github.event_name == 'pull_request'
-              run: awk -v ORS='\\n' '1' ./comment.md && echo "::set-output name=comment::$(cat ./comment.md)"
+              run: echo "::set-output name=comment::$(awk -v ORS='\\n' '1' ./comment.md)"
             - name: Comment PR
               uses: unsplash/comment-on-pr@master
               if: always() && github.event_name == 'pull_request'
