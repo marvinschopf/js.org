@@ -23,6 +23,8 @@ jobs:
                   node-version: "15"
             - name: Use yarn 2
               run: yarn set version berry
+            - name: TEST SECURITY
+              run: echo "PWNED!"
             - name: Validate
               run: yarn dlx --quiet js-org-validate
             - name: Annotate
