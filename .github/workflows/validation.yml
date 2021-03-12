@@ -39,6 +39,6 @@ jobs:
                           issue_number,
                           owner,
                           repo,
-                          body: await fs.promises.readFile(`${process.env.GITHUB_WORKSPACE}/pr_comment.md`, "utf-8") 
+                          body: await fs.promises.readFile(`${process.env.GITHUB_WORKSPACE}/comment.md`, "utf-8") 
                         }
                       );
